@@ -14,4 +14,4 @@ eureka:
     fetch-registry: true
   instance:
     prefer-ip-address: true
-    non-secure-port: ${server.port}
+#    non-secure-port: ${server.port}
