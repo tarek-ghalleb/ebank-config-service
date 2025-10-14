@@ -8,6 +8,11 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
+      routes:
+        - id: customer-service
+          uri: lb://CUSTOMER-SERVICE
+          predicates:
+            - Path=/customer-service/**
 
 eureka:
   client:
