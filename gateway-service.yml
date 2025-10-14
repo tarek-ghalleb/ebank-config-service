@@ -14,7 +14,7 @@ spring:
           predicates:
             - Path=/customer-service/**
           filters:
-            - RewritePath=/customer-service/(?<segment>.*), /$\{segment}
+            - RewritePath=/customer-service/(?<segment>.*), /${segment}
 
 eureka:
   client:
