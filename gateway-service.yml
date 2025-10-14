@@ -10,7 +10,7 @@ spring:
           lower-case-service-id: true
       routes:
         - id: customer-service
-          uri: lb://CUSTOMER-SERVICE
+          uri: lb://customer-service
           predicates:
             - Path=/customer-service/**
 
