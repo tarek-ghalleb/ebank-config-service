@@ -4,15 +4,15 @@ server:
 spring:
   cloud:
     gateway:
-#      discovery:
-#        locator:
-#          enabled: true
-#          lower-case-service-id: true
-      routes:
-        - id: customer-service
-          uri: lb://CUSTOMER-SERVICE
-          predicates:
-            - Path=/customers/**
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+#      routes:
+#        - id: customer-service
+#          uri: lb://CUSTOMER-SERVICE
+#          predicates:
+#            - Path=/customers/**
 
 eureka:
   client:
